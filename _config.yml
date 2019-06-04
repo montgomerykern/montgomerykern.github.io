@@ -14,7 +14,7 @@ banner-desc:  I appreciate you checking this out.
 author-pic: face.jpg # your photo
 author-name:  Montgomery James Kern
 about-author: Hello There, I'm a highly experienced full stack developer and 15+ year veteran sysadmin with a strong focus on utilization of open source and cloud technologies. I help small and large business develop websites that are clean, intuitive and cross browser compatible, full featured and easy to manage for the business. I also provide public as well as private cloud managment,  server infrastructures and data-center operations across Linux, Windows and Mac OS X platforms.
-email: your-email@domain.com # your email
+email: MontgomeryKern@icloud.com # your email
 phone: (910)209-1909 # your pnone number
 website: https://montgomerykern.github.io # you website
 
@@ -30,7 +30,7 @@ facebook_url:  # add url link
 discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
 
 # Newsletter
-mailchimp: e6aa6c8c6c # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+mailchimp: https://chimpstatic.com/mcjs-connected/js/users/2dde60da7ce90ccd3126ca49f/597d835ecbc6bdd79dd7743a2.js # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 # Tracker
 analytics:
