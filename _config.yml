@@ -54,5 +54,3 @@ gems:
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
-theme: jekyll-theme-cayman
