@@ -10,8 +10,8 @@ url: "https://netcraft.io" # the base hostname & protocol for your site, e.g. ht
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # Hello There.
-banner-desc: # I appreciate you checking this out.
+banner-title:  Hello There.
+banner-desc:  I appreciate you checking this out.
 
 # Author settings
 author-pic: face.jpg # your photo
