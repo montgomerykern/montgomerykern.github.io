@@ -1,4 +1,4 @@
-logo:  ntcrft
+logo:  <img src="https://netcraft.io/assets/img/ntcrft.jpg">
 title: Technology Consultant
 description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
