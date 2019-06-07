@@ -6,7 +6,9 @@ layout: default
 
   {% include banner.html %}
 
-		<div class="clock" style="margin:2em;"></div>
+  <main class="page-content" aria-label="Content">
+
+	  <div class="clock" style="margin:2em;"></div>
 		
 		<script type="text/javascript">
 			var clock;
@@ -25,8 +27,7 @@ layout: default
 				});
 			});
 		</script>
-
-  <main class="page-content" aria-label="Content">
+	  
   <section class="chapters cf">
       <div class="wrapper flex-row">
       {{ content }}
