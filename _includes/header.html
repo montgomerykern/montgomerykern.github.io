@@ -5,10 +5,13 @@
   <header class="main_header">
 
     <!-- Header Logo -->
-    <a href="{{site.baseurl}}/" class="uk-logo uk-sticky="media: 100">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
-
+    <div uk-scrollspy="cls:uk-animation-fade">
+      <a href="{{site.baseurl}}/" class="uk-logo uk-sticky=" media: 100">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+    </div>
     <!-- OffCanvas Nav Button-->
+
     <a href="" uk-toggle="target: #offcanvas-nav" class="uk-icon-button" uk-icon="menu"></a>
+
 
     <!-- OffCanvas Navigational Bar -->
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
@@ -32,9 +35,9 @@
       </div>
     </div>
     <!-- OffCanvas Navigational Bar -->
-    
+
 </div>
 <!-- End NavBar Sticky Div -->
-  
+
 </header>
 <!-- End Section Header -->
