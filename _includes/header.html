@@ -1,10 +1,10 @@
 <div uk-sticky="show-on-up: true">
-
-
 <header class="main_header">
-  <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+  <a href="{{site.baseurl}}/" class="uk-logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
 
-<button class="uk-button uk-button-success" type="button" uk-toggle="target: #offcanvas-nav">NAV</button>
+<button class="uk-button uk-button-success" type="button" uk-toggle="target: #offcanvas-nav"><span uk-icon="menu"></span>
+
+</button>
 
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
