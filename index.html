@@ -1,7 +1,9 @@
 ---
 layout: main
 ---
-  <div class="chapter">    
+
+{% for post in paginator.posts %}
+  <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
       {% if post.img %}
         <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
@@ -14,3 +16,4 @@ layout: main
       </div>
     </a>
   </div>
+{% endfor %}
