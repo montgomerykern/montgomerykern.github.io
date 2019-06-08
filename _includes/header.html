@@ -1,33 +1,13 @@
 
 <header class="main_header">
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-    <div class="uk-navbar-center">
 
-        <div class="uk-navbar-center-left"><div>
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="{{site.baseurl}}/home/">Home</a></li>
-                <li>
-                    <a href="#">Parent</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div></div>
-        <a class="uk-navbar-item uk-logo" href="/"><img data-src="https://netcraft.io/assets/img/ntcrft.png" width="150" height="" alt="" uk-img></a>
-        <div class="uk-navbar-center-right"><div>
-            <ul class="uk-navbar-nav">
-                <li><a href="#">Item</a></li>
-            </ul>
-        </div></div>
-
-    </div>
-</nav>
+  <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+    
+  <nav class="main_menu">
+    <a href="{{site.baseurl}}/about/">About</a>
+    <a href="{{site.baseurl}}/contact/">Contact</a>
+  </nav>
   
-  </header> 
+</header> 
   
 
