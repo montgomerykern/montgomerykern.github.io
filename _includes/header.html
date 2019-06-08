@@ -1,11 +1,15 @@
 
 <header class="main_header">
   <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}NetCraft<span></span>{% endif %}</a>
-  <nav class="main_menu">
-    <a href="{{site.baseurl}}/home/">Home</a>
-    <a href="{{site.baseurl}}/about/">About Us</a>
-    <a href="{{site.baseurl}}/services/">Services</a>
-    <a href="{{site.baseurl}}/work/">Work</a>
-    <a href="{{site.baseurl}}/contact/">Contact</a>
-  </nav>
+  <div class="uk-navbar-dropdown">
+    <li>
+    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/home/">Home</a></ul>
+    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/about/">About Us</a></ul>
+    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/services/">Services</a></ul>
+    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/work/">Work</a></ul>
+    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/contact/">Contact</a></ul>
+      <li>
+  </div>
 </header> <!-- End Section Header -->
+
+
