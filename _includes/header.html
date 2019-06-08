@@ -1,15 +1,42 @@
 
 <header class="main_header">
   <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}NetCraft<span></span>{% endif %}</a>
-  <div class="uk-navbar-dropdown">
-    <li>
-    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/home/">Home</a></ul>
-    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/about/">About Us</a></ul>
-    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/services/">Services</a></ul>
-    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/work/">Work</a></ul>
-    <ul class="uk-nav uk-navbar-dropdown-nav"><a href="{{site.baseurl}}/contact/">Contact</a></ul>
-      <li>
-  </div>
+  
+  
+  
+  
+
+
+
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left"><div>
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="{{site.baseurl}}/home/">Home</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div></div>
+        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+        <div class="uk-navbar-center-right"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div></div>
+
+    </div>
+</nav>
+  
+  
+  
+    
 </header> <!-- End Section Header -->
-
-
