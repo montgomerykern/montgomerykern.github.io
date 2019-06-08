@@ -2,9 +2,11 @@
 <header class="main_header">
   <a href="{{site.baseurl}}/" class="uk-logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
 
-<span uk-toggle="target: #offcanvas-nav uk-icon="menu"></span>
+<span uk-toggle="target: #offcanvas-nav uk-icon="menu"> <ul class="uk-iconnav">
+    <li><a href="offcanvas-nav uk-icon="menu"" uk-icon="icon: plus"></a></li>
+</ul></span>
 
-</button>
+
 
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
