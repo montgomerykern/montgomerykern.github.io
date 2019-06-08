@@ -1,32 +1,8 @@
 
-<section class="uk-section">
-  
-<nav class="uk-navbar-container uk-margin uk-navbar-transparent">
-    <div class="uk-navbar-center">
-
-        <div class="uk-navbar-center-left"><div>
-            <ul class="uk-navbar-nav uk-margin-top">
-                <li class="uk-active"><a href="{{site.baseurl}}/about/">About</a></li>
-                <li>
-                    <a href="#">Parent</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="{{site.baseurl}}/contact/">Contact</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div></div>
-       <a href="{{site.baseurl}}/" class="uk-navbar logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
-        <div class="uk-navbar-center-right"><div>
-            <ul class="uk-navbar-nav">
-                <li><a href="#">Item</a></li>
-            </ul>
-        </div></div>
-
-    </div>
-</nav>
-  
-  </section> 
+<header class="main_header">
+  <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+  <nav class="main_menu">
+    <a href="{{site.baseurl}}/about/">About</a>
+    <a href="{{site.baseurl}}/contact/">Contact</a>
+  </nav>
+</header> <!-- End Section Header -->
