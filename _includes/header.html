@@ -1,37 +1,40 @@
+<!-- NavBar Sticky Div -->
 <div uk-sticky="animation: uk-animation-slide-top show-on-up: true">
-<header class="main_header">
-  <a href="{{site.baseurl}}/" class="uk-logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
 
+  <!-- Main Header -->
+  <header class="main_header">
 
-      
-      <a href="" uk-toggle="target: #offcanvas-nav" class="uk-icon-button" uk-icon="menu"></a>
+    <!-- Header Logo -->
+    <a href="{{site.baseurl}}/" class="uk-logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
 
+    <!-- OffCanvas Nav Button-->
+    <a href="" uk-toggle="target: #offcanvas-nav" class="uk-icon-button" uk-icon="menu"></a>
 
-
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar">
-
+    <!-- OffCanvas Navigational Bar -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-default">
-            <li class="uk-active"><a href="/index.html">Home</a></li>
-            <li class="uk-parent">
-                <a href="{{site.baseurl}}/about/">About Us</a>
-                <ul class="uk-nav-sub">
-                    <li><a href="#">Montgomery Kern</a></li>
-                    <li><a href="#">Emma Kern</a></li>
-                </ul>
-            </li>
-              <li class="uk-item"><a href="{{site.baseurl}}/contact/">Contact</a></li>
-            <li class="uk-nav-header">Header</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+          <li class="uk-active"><a href="/index.html">Home</a></li>
+          <li class="uk-parent">
+            <a href="{{site.baseurl}}/about/">About Us</a>
+            <ul class="uk-nav-sub">
+              <li><a href="#">Montgomery Kern</a></li>
+              <li><a href="#">Emma Kern</a></li>
+            </ul>
+          </li>
+          <li class="uk-item"><a href="{{site.baseurl}}/contact/">Contact</a></li>
+          <li class="uk-nav-header">Header</li>
+          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+          <li class="uk-nav-divider"></li>
+          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
         </ul>
-
+      </div>
     </div>
+    <!-- OffCanvas Navigational Bar -->
+    
 </div>
-</div>
-
-
-</header> <!-- End Section Header -->
-</div>
+<!-- End NavBar Sticky Div -->
+  
+</header>
+<!-- End Section Header -->
