@@ -4,27 +4,13 @@ layout: default
 
   {% include header.html %}
 
-{% for post in paginator.posts %}
-  <div class="chapter">
-    <a href="{{post.url | prepend: site.baseurl}}">
-      {% if post.img %}
-        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-      {% endif %}
-    </a>
-    <a href="{{post.url | prepend: site.baseurl}}">
-      <div class="chapter_inner">
-        <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
-        <h3 class="chapter_title">{{post.title}}</h3>
-      </div>
-    </a>
-  </div>
-{% endfor %}
 
- <section class="recent_box">
+
+ <section class="chapter">
     <div class="post_wrapper">
       <h2 class="recent_title">Recent post</h2>
       <div class="recent_list">
-        {% for post in site.posts offset:0 limit:9 %}
+        {% for post in site.posts offset:0 limit:12 %}
           {% if post.title %}
             <a href="{{ post.url | prepend: site.baseurl }}"
               class="recent_item"
