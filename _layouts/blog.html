@@ -5,23 +5,21 @@ layout: default
   {% include header.html %}
 
 
-
- <section class="chapters cf">
-    <div class="wrapper flex-row">
-      <h2 class="recent_title">Our Blog</h2>
-      <div class="recent_list">
-        {% for post in site.posts offset:0 limit:12 %}
-          {% if post.title %}
-            <a href="{{ post.url | prepend: site.baseurl }}"
-              class="recent_item"
-              style="background-image: url( {{ "{{site.baseurl}}/assets/img/" | prepend: site.baseurl | append : post.img}} )">
-                <span>{{ post.title }}</span>
-            </a>
-          {% endif %}
-        {% endfor %}
+{% for post in paginator.posts %}
+  <div class="chapter cf">
+    <a href="{{post.url | prepend: site.baseurl}}">
+      {% if post.img %}
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+      {% endif %}
+    </a>
+    <a href="{{post.url | prepend: site.baseurl}}">
+      <div class="chapter_inner">
+        <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
+        <h3 class="chapter_title">{{post.title}}</h3>
       </div>
-    </div>
-</section> <!-- End Section Recent Box -->
+    </a>
+  </div>
+{% endfor %}
 
   {% include pagination.html %}
 
