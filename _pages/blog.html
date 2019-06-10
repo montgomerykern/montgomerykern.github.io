@@ -5,7 +5,6 @@ permalink: /blog/
 ---
 {% include header.html %}
 
-
 {% for post in paginator.posts %}
   <div class="chapter">
     <a href="{{post.url | prepend: site.baseurl}}">
@@ -22,5 +21,11 @@ permalink: /blog/
   </div>
 {% endfor %}
 
-<!-- End Section Author -->
-</section>
+
+  <main class="page-content" aria-label="Content">
+  <section class="chapters cf">
+      <div class="wrapper flex-row">
+      {{ content }}
+      </div>
+  </section>
+  </main>
