@@ -5,21 +5,7 @@ layout: default
   {% include header.html %}
 
 
-{% for post in paginator.posts %}
-  <div class="chapter cf">
-    <a href="{{post.url | prepend: site.baseurl}}">
-      {% if post.img %}
-        <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-      {% endif %}
-    </a>
-    <a href="{{post.url | prepend: site.baseurl}}">
-      <div class="chapter_inner">
-        <p class="chapter_number">{{post.date | date: '%Y, %b %d'}}</p>
-        <h3 class="chapter_title">{{post.title}}</h3>
-      </div>
-    </a>
-  </div>
-{% endfor %}
+<script type="text/javascript" src="http://montgomerykern.tumblr.com/js?start=0&num=5"></script>
 
   {% include pagination.html %}
 
