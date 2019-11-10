@@ -1,57 +1,52 @@
-# Welcome to Jekyll!
-#
+logo:  <img src="https://netcraft.io/assets/img/ntcrft-smll.png">
+title: NetCraft Media
+description: > # this means to ignore newlines until "baseurl:"
+permalink: ':title/'
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://netcraft.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Site settings
-title: NetCraft
-description: |
-  NetCraft Public Interface
-owner: NetCraft # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://netcraft.io" # the base hostname & protocol for your site
-social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
-  #flickr:
-  #instagram:
-  #youtube-square:
-  #spotify:
-  #stack-overflow:
-  #vimeo:
-  #reddit:
-  #stubleupon:
-  #delicious:
-  #pied-piper:
-  #digg:
-  #soundcloud:
-  #deviantart:
-  #angellist:
-  #tumblr-square:
-  #stackexchange:
-  #weibo:
-  #trello:
-  #foursquare:
-  #linux:
-  #bitbucket-square:
-  #vk:
-  #slack:
-  #vine:
-  #weixin:
-  #yelp:
-  #skyatlas:
-  #leanpub:
-  #connectdevelop:
-  #ils:
-  #forumbee:
-  #tripadvisor:
-  #amazon:
+# Banner settings
+video: mountains.mp4 # add banner video. Add your video file to the folder video
+banner-title:  NetCraft Media
+banner-desc:
+
+# Author settings
+author-pic: face.png # your photo
+author-name:  Montgomery James Kern
+about-author: Hello There, I'm a highly experienced full stack developer and 15+ year veteran sysadmin with a strong focus on utilization of open source and cloud technologies. I help small and large business develop websites that are clean, intuitive and cross browser compatible, full featured and easy to manage for the business. I also provide public as well as private cloud managment,  server infrastructures and data-center operations across Linux, Windows and Mac OS X platforms.
+email: MontgomeryKern@icloud.com # your email
+phone: (843)315-4509 # your pnone number
+website: https://montgomerykern.github.io # you website
+
+# Social link
+twitter_url:   # add url link
+instagram_url: # add url link
+pinterest_url: # add url link
+dribbble_url:  # add url link
+facebook_url:  # add url link
+
+# Disqus
+discus_identifier: netcraft-io # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+
+# Newsletter
+mailchimp: netcraft.us15.list-manage.com/subscribe/post?u=2dde60da7ce90ccd3126ca49f&amp;id=e6aa6c8c6c # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Tracker
+analytics:
+
+# Paginate
+paginate: 12
+paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
-#sass:
-#  style: compressed
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
